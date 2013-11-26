@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+	<title>BC Partner - Home</title>
+	<link rel="stylesheet" href="/stylesheets/ups-screen.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/theme.css" type="text/css" />
+	<!--[if IE 6]><link rel="stylesheet" href="/StyleSheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	
+</head>
+<body>
+	<a href="/admin" id="site-admin">Site Admin</a> 
+	<div id="stretch-header">
+		<div class="gradient">
+			<div id="container-header" class="container">
+				<a id="logo" href="/"><img class="fixPNG" src="/cssimg/logo-placeholder.png" alt="BC Partner" /></a>
+				<div id="whoslogged">
+                	{module_whosloggedin,/secure-client-portal}
+				</div>
+				<div id="search-site">
+					<form name="catsearchform83926" method="post" action="/Default.aspx?SiteSearchID=50&ID=/search-results">
+						<input class="text" type="text" name="CAT_Search" id="CAT_Search" /><input class="button-submit" type="submit" value="Search" />
+					</form>
+               
+			</div>
+			</div>
+		</div>
+	</div>
+	<div id="stretch-nav">
+		<div id="container-nav" class="container">
+			{module_menu,475485}
+		</div>
+	</div>
+	<div id="stretch-content">
+		<div id="container-content" class="container">
+			
+			<!-- Page Content -->
+			
+			｛tag_pagecontent}
+			
+			<!-- End Page Content -->
+
+		</div>
+	</div>
+	<div id="stretch-footer">
+		<div id="container-footer" class="container">
+			<hr class="space" /><hr /><!-- <hr class="space" /> -->
+			<div id="section-newsletter" class="span-5 colborder">
+
+            	  <h6>Newsletter Sign Up</h6>
+            	  <form name="catemaillistform17872" onsubmit="return checkWholeForm17872(this)" method="post" action="/CampaignProcess.aspx?ListID=10142">
+            	    <div class="form">
+            	      <div class="item">
+            	        <label for="CLFullName">Full Name</label>
+            	        <input class="text" type="text" name="FullName" id="CLFullName" maxlength="255" />
+          	        </div>
+            	      <div class="item">
+            	        <label for="CLEmailAddress">Email Address</label>
+            	        <input class="text" type="text" name="EmailAddress" id="CLEmailAddress" maxlength="255" />
+          	        </div>
+            	      <div class="item">
+            	        <label for="Captcha">Enter Word Verification in box below</label>
+            	        <img src="/captchaprocess.aspx?color=gray" alt="Captcha" />
+            	        <input class="text" type="text" name="Captcha" id="Captcha" />
+            	        <input type="hidden" name="CaptchaH" id="CaptchaH" value="{module_captcha}" />
+          	        </div>
+            	      <div class="item">
+            	        <input class="button-submit" type="submit" value="Subscribe" id="catlistbutton" />
+          	        </div>
+          	      </div>
+            	    <script type="text/javascript" src="/CatalystScripts/ValidationFunctions.js"></script>
+            	    <script type="text/javascript">function checkWholeForm17872(theForm){var why = "";if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);if (theForm.Captcha && theForm.CaptchaH) if (formfield(theForm.Captcha.value,'allupper') != theForm.CaptchaH.value) why += appendBreak("- Word verification is incorrect."); if (why != ""){alert(why);return false;}theForm.submit();return false;}</script>
+          	    </form>
+
+			</div>
+			<div id="section-nav-footer" class="span-8 append-1">
+			  	<div class="nav-footer span-3">
+                	<h6>Main</h6>
+                	{module_menu,475485}
+                	
+                </div>
+                <div class="nav-footer span-3">
+                	<h6>Overview</h6>
+                	{module_menu,504183}
+                </div>
+               	<div class="span-2">
+                
+                </div> 
+              
+                
+            
+                	
+			</div>
+			<div id="section-site-info" class="span-9 last">
+				Copyright &copy; 2009. <a href="/">BC Partner</a>. All rights reserved.<br />
+                <a href="/terms-of-use">Terms of Use</a> | <a href="/privacy-policy">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
