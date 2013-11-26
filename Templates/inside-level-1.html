@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IT Help Desk Support | Links Technology Solutions, Inc.
+        <title>{tag_pagetitle} | Links Technology Solutions, Inc.
 </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +54,7 @@
                 </div><!-- End slides -->
             </div><!-- End slideshow -->
         </section>
-
+<!--
         <section class="container services">
             <div class="col-md-4 media">
                 <a class="pull-left" href="#">
@@ -116,9 +116,14 @@
                 </div>
             </div>
         </section>
-
+-->
         <div class="container">
             <article class="main">
+<!-- 
+Required page content holder tag
+-->
+{tag_pagecontent}
+<!--
                 <hr class="featurette-divider">
                 <h1>Links Technology Support</h1>
                 <p>Maintaining an IT support staff can be an expensive, time-consuming proposition for small-to-medium size companies. But an outsourcing partnership with Links Technology Solutions can give you the power to concentrate on the profitability of your business while we concentrate on the complexities of your information technology - all for less cost than doing it yourself.</p>
@@ -137,11 +142,7 @@
                 </section><!-- End expertise -->
             </article><!-- End main content -->
 
-            <footer>
-                <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2013 Links Technology Solutions, Inc. All right reserved.</p>
-                <p>440 E State Pkwy, Schaumburg, IL 60173 (847-252-7600)</p>
-            </footer><!-- End footer -->
+            {module_contentholder,100703}<!-- End footer -->
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
