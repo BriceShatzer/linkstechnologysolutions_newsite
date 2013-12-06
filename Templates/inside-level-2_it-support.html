@@ -3,27 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>IT Support | {tag_pagetitle} | Links Technology Solutions, Inc.
+        <title>{tag_pagetitle} | IT Support | Links Technology Solutions, Inc.
 </title>
-        <meta name="description" content="">
+        <meta name="description" content="Providing premium technology services in IT Help Desk Support, Website Design &amp; Development, Application Development, Business Optimization, and IT Staffing since 1999.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"><!-- End Bootstrap -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"><!-- End Font Awesome -->
         <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/links.min.css">
+        <link rel="stylesheet" href="/css/links.min.css"><!-- End stylesheets -->
 
         <!--[if lt IE 9]>
             <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
         <![endif]--><!-- End <head> scripts, more before </body> -->
     </head>
-    <body class="level-2">
+    <body class="it-support level-2">
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-{module_contentholder,100671}
+        {module_contentholder,100671}<!-- End top bar -->
 
         <section class="banner">
             <div class="container title">
@@ -32,16 +33,20 @@
         </section>
 
         <div class="container">
-            <article class="main">
-                <div class="col-md-4 list-group pull-right" id="level2Nav">
-                    {module_contentholder, 100675}
-                </div><!-- End sub nav -->
+            <section class="clearfix main">
+                <aside class="col-md-4 pull-right">
+                    <div class="list-group" id="level2Nav">
+                        {module_contentholder, 100675}
+                    </div><!-- End sub nav -->
+                </aside><!-- End sidebar -->
                 
-                {tag_pagecontent}
-            </article><!-- End main content -->
+                <article class="col-md-8 content">
+                    {tag_pagecontent}
+                </article><!-- End main content -->
+            </section><!-- End main content -->
 
             {module_contentholder,100703}<!-- End footer -->
-        </div>
+        </div><!-- End main content centering container -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script><!-- End jQuery -->
@@ -49,6 +54,12 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script><!-- End Bootstrap -->
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.0/holder.js"></script><!-- End Holder, to be removed -->
+        <script>
+            $(function() { $('#contact').popover({
+                'content': $('#contact-content').html()
+                });
+            });
+        </script>
         <script src="/js/subsectionMenu.js"></script>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
