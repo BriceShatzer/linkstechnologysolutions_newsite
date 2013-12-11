@@ -1,0 +1,573 @@
+/* LESS variables
+-------------------------------------------------- */
+
+@links-dark-blue: #003054;
+@links-light-blue: #5e9cae;
+
+/* General
+-------------------------------------------------- */
+
+body {
+	color: #5a5a5a;
+}
+
+h2 {
+  color: @links-dark-blue;
+}
+
+a {
+  color: @links-light-blue;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: @links-light-blue;
+  border-color: darken(@links-light-blue, 7%);
+  &:hover {
+      background-color: darken(@links-light-blue, 7%);
+      border-color: darken(@links-light-blue, 17%)
+  }
+}
+
+/* Header
+-------------------------------------------------- */
+
+.navbar-brand { /* Logo */
+  padding-top: 12px;
+}
+
+.navbar-right li {
+  float: left;
+}
+
+nav .fa {
+  font-size: 18px;
+}
+
+.popover address {
+  margin-bottom: 0;
+}
+
+/* Navigation
+-------------------------------------------------- */
+
+.navbar-wrapper { /* Position nav */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  /* Flip around the padding for proper display in narrow viewports */
+  .container { 
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navbar-inverse { /* Custom navbar color */
+  background-color: @links-dark-blue;
+  border: none;
+  opacity: .9;
+
+  .navbar-nav > li > a, .navbar-nav > li > a:focus {
+    color: @links-light-blue;
+  }
+
+  .navbar-nav > li > a:focus:hover {
+    color: white;
+  }
+
+  .navbar-nav > .dropdown > a .caret {
+    border-top-color: @links-light-blue;
+    border-bottom-color: @links-light-blue;
+  }
+
+  .navbar-nav > .active > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+  }
+
+  .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+    background-color: @links-light-blue;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #262626;
+  }
+
+  /* Mobile toggle */
+
+  .navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
+    border-color: white;
+  }
+  .navbar-toggle {
+    background: transparent;
+  }
+  .navbar-toggle:hover, .navbar-toggle:focus {
+    background-color: white;
+    .icon-bar {
+      background-color: @links-dark-blue;
+    }
+  }
+}
+
+/* Current section */
+
+.it-support .navbar-left > li:first-child, .web-design .navbar-left > li:nth-child(2), .app-development .navbar-left > li:nth-child(3), .it-staffing .navbar-left > li:nth-child(4), .about-us .navbar-left > li:nth-child(5) {
+  > a {
+    background-color: @links-light-blue;
+    color: white;
+  }
+  .caret {
+    border-bottom-color: white;
+    border-top-color: white;
+  }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu {
+  padding-top: 0;
+}
+
+.dropdown-header {
+  padding: 13px 20px 7px !important;
+}
+
+.navbar-nav .open .dropdown-menu {
+  background: white;
+  border-radius: 0;
+}
+
+.navbar-collapse {
+  max-height: none;
+}
+
+.dropdown img {
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+/* Homepage main slideshow
+-------------------------------------------------- */
+
+#main-slideshow { /*  Slideshow base class */
+  height: 500px;
+  margin-bottom: 60px;
+  
+  .item { /* Declare heights because of positioning of img element */
+    height: 500px;
+    background-color: @links-dark-blue;
+  }
+
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -700px;
+    max-width: none;
+    height: 500px;
+  }
+}
+
+.carousel-control {
+  display: none;
+}
+
+#main-slideshow .carousel-inner {
+  .item {
+    background: url(../img/gold-medal-runner-sm.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &:nth-child(2) {
+      background-image: url(../img/surfing-sm.jpg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../img/gold-medal-runner-sm.jpg);
+    }
+
+    &:nth-child(4) {
+      background-image: url(../img/surfing-sm.jpg);
+    }
+  }
+}
+
+/* Three homepage callouts
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+  h2 {
+    font-weight: normal;
+  }
+
+  /* Center align the text within the three columns below the carousel */
+  .col-lg-4 {
+    text-align: center;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Homepage blog
+-------------------------------------------------- */
+
+.featurette-divider {
+  margin: 60px 0;
+}
+
+.featurette-heading {
+  line-height: 1;
+  margin-top: 0;
+}
+
+/* Quotes slideshow (carousel)
+-------------------------------------------------- */
+
+#quotes {
+  .item {
+    background-color: white;
+    height: 300px;
+  }
+
+  .carousel-indicators li {
+    border-color: #5a5a5a;
+    &.active {
+      background-color: #5a5a5a;
+    }
+  }
+
+  .carousel-caption {
+    color: inherit;
+    text-shadow: none;
+    top: 0;
+    .btn {
+      margin-bottom: 4px;
+    }
+  }
+
+  .source {
+    color: #999;
+  }
+}
+
+/* Subpage level 1 banner
+-------------------------------------------------- */
+
+.banner {
+  background-color: #ccc;
+  text-align: center;
+  .carousel-caption {
+    bottom: 20px;
+  }
+  .item {
+    height: 320px;
+  }
+}
+
+.level-1 .banner {
+  height: 320px;
+}
+
+.level-2 .banner {
+  height: 200px;
+  padding-top: 90px;
+}
+
+/* Main content
+-------------------------------------------------- */
+
+.main {
+  padding-top: 30px;
+}
+
+.main .well {
+  margin: 30px 0;
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+.tab-content > .tab-pane {
+  padding: 30px 0;
+}
+
+
+/* Level 1 section callouts (services with icons)
+-------------------------------------------------- */
+
+.services .media {
+  padding: 30px;
+}
+
+.services .media:first-child {
+  margin-top: 15px;
+}
+
+.it-support.level-1 .banner {
+  background: #ccc url(../img/it-help-desk-support-banner.jpg) 50% 0 no-repeat;
+}
+
+/* Level 2 subpages
+-------------------------------------------------- */
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+  background-color: @links-dark-blue;
+  border-color: darken(@links-dark-blue, 7%);
+}
+
+aside span.subnav-icon{
+  font-size: 25px; 
+  float: left; 
+  margin-right: 10px;
+}
+/* .nav-tabs {
+  border-color: @links-light-blue;
+  > li.active > a {
+    border-color: @links-light-blue;
+    border-bottom-color: transparent;
+  }
+} */
+
+/* Footer
+-------------------------------------------------- */
+
+footer {
+  margin-top: 60px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* Media Queries
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .navbar-wrapper .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .navbar-left {
+    float: none !important;
+  }
+
+  .navbar-right {
+    float: none !important;
+    li {
+      float: left;
+    }
+  }
+
+  .container > .navbar-header {
+    float: none;
+    margin-right: 15px;
+  }
+
+  .container > .navbar-collapse {
+    border-top: 1px solid #101010;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    margin-left: -15px;
+    padding-right: 0;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-left:  15px;
+    padding-right: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-left:  0;
+    padding-right: 0;
+  }
+
+  .navbar-wrapper .navbar { /* Round the corner after being detached from the top. */
+    border-radius: 4px;
+
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    background: white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    float: none;
+    position: static;
+  }
+
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+  
+  /* Slideshow */
+  .carousel-caption p { /* Bump up size of carousel content */
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  #main-slideshow .carousel-inner {
+    .item {
+      background-image: url(../img/gold-medal-runner.jpg);
+
+      &:nth-child(2) {
+        background-image: url(../img/surfing.jpg);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../img/gold-medal-runner.jpg);
+      }
+
+      &:nth-child(4) {
+        background-image: url(../img/surfing.jpg);
+      }
+    }
+  }
+
+  .carousel-control {
+    display: block;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  #quotes {
+    .carousel-caption {
+      bottom: auto;
+      padding-top: 70px;
+    }
+
+    .carousel-indicators {
+      bottom: 70px;
+    }
+
+    .source {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+  }
+
+  .marketing { /* Remove the edge padding needed for mobile */
+    padding-left: 0;
+    padding-right: 0;
+    .col-lg-4 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  /* Quotes slideshow (carousel) */
+
+  #quotes {
+    .item {
+      height: 470px;
+    }
+  }
+
+  footer {
+    text-align: right;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .container > .navbar-header {
+    float: left;
+    margin-right: 0;
+  }
+
+  .container > .navbar-collapse {
+    border-top: 0;
+    box-shadow: none;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: auto;
+  }
+
+  .navbar-collapse .navbar-nav.navbar-left:first-child {
+    margin-left: 0;
+  }
+
+  .navbar-nav > li > .dropdown-menu {
+    width: 491px;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-rop-right-radius: 0;
+    float: left;
+    position: absolute;
+  }
+
+  .navbar-left {
+    float: left !important;
+  }
+
+  .navbar-right {
+    float: right !important;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 90px;
+  }
+}

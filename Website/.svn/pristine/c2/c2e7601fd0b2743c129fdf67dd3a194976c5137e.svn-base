@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{tag_pagetitle} | Links Technology Solutions, Inc.
+</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"><!-- End Bootstrap -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/links.min.css">
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <![endif]--><!-- End <head> scripts, more before </body> -->
+    </head>
+    <body class="it-support level-1">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+{module_contentholder,100671}
+
+        <section class="banner">
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>&ldquo;Links rescued us from a technology mess. Amazing people, amazing service.&rdquo;</p><p class="source">- John Doe, Acme Industries<br>(IT Support customer)</p>
+                            </div>
+                        </div>
+                    </div><!-- End first slide -->
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>&ldquo;Links rescued us from a technology mess. Amazing people, amazing service.&rdquo;</p><p class="source">- John Doe, Acme Industries<br>(IT Support customer)</p>
+                            </div>
+                        </div>
+                    </div><!-- End second slide -->
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>&ldquo;Links rescued us from a technology mess. Amazing people, amazing service.&rdquo;</p><p class="source">- John Doe, Acme Industries<br>(IT Support customer)</p>
+                            </div>
+                        </div>
+                    </div><!-- End third slide -->
+                </div><!-- End slides -->
+            </div><!-- End slideshow -->
+        </section>
+<!--
+        <section class="container services">
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="img/computer.png" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Technology Support</h4>
+                    <p>Infrastructure, servers, desktops, laptops, smartphones, Macs and more...<br><a class="btn btn-primary btn-sm" href="#">View details &raquo;</a></p>
+                </div>
+            </div>
+        </section>
+-->
+        <div class="container">
+            <article class="main">
+<!-- 
+Required page content holder tag
+-->
+{tag_pagecontent}
+<!--
+                <hr class="featurette-divider">
+                <h1>Links Technology Support</h1>
+                <p>Maintaining an IT support staff can be an expensive, time-consuming proposition for small-to-medium size companies. But an outsourcing partnership with Links Technology Solutions can give you the power to concentrate on the profitability of your business while we concentrate on the complexities of your information technology - all for less cost than doing it yourself.</p>
+                <p>Links has earned a reputation among clients for establishing partnerships based on technical expertise, exceptional people skills, and a 100% commitment to complete customer satisfaction. We pride ourselves on providing solutions that meet our customers’ unique needs for infrastructure and software support, including Help Desk Support and Website Design, Development, and Hosting.</p>
+
+                <section class="well">
+                    <h2>Expertise when you need it</h2>
+                    <p>Links Technology is certified by all the major players in the technology industry, so you can be confident that when you need support, we will have the expertise to provide it.</p>
+                    <div>
+                        <img src="img/vmware-certified.gif">
+                        <img src="img/cisco.gif">
+                        <img src="img/microsoft-certified-professional.gif">
+                        <img src="img/apple-certified-technician.gif">
+                        <img src="img/dell-partner.gif">
+                    </div>
+                </section><!-- End expertise -->
+            </article><!-- End main content -->
+
+            {module_contentholder,100703}<!-- End footer -->
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script><!-- End jQuery -->
+
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script><!-- End Bootstrap -->
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.0/holder.js"></script><!-- End Holder, to be removed -->
+
+        <script>
+            $(function() { $('#contact').popover({
+                'content': $('#contact-content').html()
+                });
+            });
+        </script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script><!-- End Google Analytics --><!-- End scripts -->
+    </body>
+</html>

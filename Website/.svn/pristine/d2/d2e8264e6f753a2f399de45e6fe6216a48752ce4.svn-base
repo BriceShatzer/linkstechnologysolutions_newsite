@@ -1,0 +1,1 @@
+<a href="{tag_image_value}"><img alt="" src="{tag_image(thumbnail)_value}" data-title="{tag_name_nolink}" data-description="&lt;p style='margin:0px'&gt;{tag_info}&lt;/p&gt;&lt;p style='margin:0px'&gt;&lt;a href='{tag_url}' target='_blank'&gt;{tag_url}&lt;/a&gt;&lt;/p&gt;" /></a>
